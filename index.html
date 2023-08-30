@@ -6,8 +6,6 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <!-- choose one -->
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -17,19 +15,39 @@
         </h1>
         <div class="header-container">
           <form action="#">
-            <button class="search-btn"><i data-feather="search"></i></button>
+            <button class="search-btn"><img src="assets/svg/search.svg" alt=""></button>
             <input type="search" name="search" id="search-input">
           </form>
-          <a class="notif-btn"><i data-feather="bell"></i></a>
+          <a class="notif-btn"><img src="assets/svg/bell.svg" alt=""></a>
           <a class="img-profile"><img src="assets/img/profile.jpg" alt=""></a>
-          <a class="username">Kepler</a>
+          <a href="#" class="username">Kepler</a>
         </div>
       </header>
-      <aside></aside>
+      <nav>
+        <div class="main-nav">
+          <img src="assets/svg/home.svg" alt="">
+          <a href="#">Home</a>
+          <img src="assets/svg/user.svg" alt="">
+          <a href="#">Profile</a>
+          <img src="assets/svg/message-square.svg" alt="">
+          <a href="#">Messages</a>
+          <img src="assets/svg/clock.svg" alt="">
+          <a href="#">History</a>
+          <img src="assets/svg/folder.svg" alt="">
+          <a href="#">Tasks</a>
+          <img src="assets/svg/users.svg" alt="">
+          <a href="#">Communities</a>
+        </div>
+        <div class="second-nav">
+          <img src="assets/svg/settings.svg" alt="">
+          <a href="">Settings</a>
+          <img src="assets/svg/help-circle.svg" alt="">
+          <a href="">Support</a>
+          <img src="assets/svg/shield.svg" alt="">
+          <a href="">Privacy</a>
+        </div>
+      </nav>
       <main></main>
     </div>
-    <script>
-      feather.replace()
-    </script>
   </body>
 </html>
