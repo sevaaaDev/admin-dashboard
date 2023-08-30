@@ -97,20 +97,20 @@ header a:active, .search-btn:active {
 
 /* === Sidebar === */
 
-nav {
+.side-nav {
   padding: 1rem;
   background-color: var(--primary-clr);
   color: white;
 }
 
-nav a {
+.side-nav a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
 }
 
 .main-nav {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 50px 1fr;
   row-gap: 1.5rem;
@@ -126,4 +126,42 @@ nav > div > img {
   display: grid;
   grid-template-columns: 50px 1fr;
   gap: 1rem;
+}
+
+/* === Profile Nav === */
+
+.profile-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .5rem 6rem 1rem 3rem;
+  background-color: var(--secondary-clr);
+  box-shadow: 1px 5px 5px #ccc;
+}
+
+.profile-nav img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.profile-nav p {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+.profile-nav p a {
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile-nav button {
+  background-color: var(--primary-clr);
+  color: white;
+  padding: .5em 0;
+  width: 100px;
+  border: none;
+  border-radius: 1rem;
 }
