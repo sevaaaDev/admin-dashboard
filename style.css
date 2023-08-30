@@ -14,6 +14,10 @@
   border: 1px solid;
 }
 
+body {
+  font-family: 'Roboto';
+}
+
 /* === Header === */
 
 header {
@@ -137,6 +141,8 @@ nav > div > img {
   padding: .5rem 6rem 1rem 3rem;
   background-color: var(--secondary-clr);
   box-shadow: 1px 5px 5px #ccc;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
 .profile-nav img {
@@ -164,4 +170,15 @@ nav > div > img {
   width: 100px;
   border: none;
   border-radius: 1rem;
+}
+
+.profile-nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Main === */
+
+main {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
 }
