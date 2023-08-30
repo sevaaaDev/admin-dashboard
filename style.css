@@ -202,7 +202,7 @@ main section h2 {
   gap: 2rem;
 }
 
-article {
+.article-container article {
   border-left: .5rem solid var(--tertiary-clr);
   border-radius: .5rem;
   background-color: var(--secondary-clr);
@@ -210,18 +210,49 @@ article {
   box-shadow: 0px 1px 10px;
 }
 
-article h3 {
+.article-container article h3 {
   margin: 0;
   padding: 0;
 }
 
-article p {
+.article-container article p {
   height: 100px;
 }
 
-article .icon-container {
+.article-container article .icon-container {
   display: flex;
   justify-content: end;
   gap: 1rem;
 }
 
+/* === Side Announcement === */
+
+.announcement {
+  padding: 2rem 1rem 0 0;
+}
+
+.announcement h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+.card-announce {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-clr);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 1px 10px;
+}
+
+.card-announce article:nth-last-child(n + 2) {
+  border-bottom: 1px solid;
+}
+
+.card-announce article:nth-child(n + 2) {
+  padding: 1rem 0 ;
+}
+
+.card-announce h3 {
+  margin: 0;
+}
