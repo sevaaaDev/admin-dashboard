@@ -127,6 +127,7 @@ header a:active, .search-btn:active {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 50px 1fr;
+  align-items: center;
   row-gap: 1.5rem;
   column-gap: 1rem;
 }
@@ -139,8 +140,13 @@ nav > div > img {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: 50px 1fr;
+  align-items: center;
   row-gap: 1.5rem;
   column-gap: 1rem;
+}
+
+.side-nav a:hover {
+  color: var(--tertiary-clr);
 }
 
 /* === Profile Nav === */
@@ -333,4 +339,8 @@ main section h2 {
 
 .card-trending p {
   color: var(--font-clr);
+}
+
+.card-trending a:hover {
+  text-decoration: underline;
 }
