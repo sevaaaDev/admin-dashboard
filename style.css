@@ -297,9 +297,13 @@ main section h2 {
   box-shadow: 0px 1px 10px var(--shadow);
 }
 
-.card-trending img {
+.card-trending .img-profile-trending {
   width: 40px;
   border-radius: 50%;
+}
+
+.card-trending img {
+  width: 40px;
 }
 
 .card-trending article {
