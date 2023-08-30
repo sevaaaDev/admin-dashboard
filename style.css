@@ -1,7 +1,17 @@
 :root {
-  --primary-clr: #6366f1;
+  --primary-clr: #000;
   --secondary-clr: #eef2ff;
-  --tertiary-clr: #22c55e;
+  --tertiary-clr: #e61097;
+  --shadow: #ccc;
+  --font-clr: #555;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/font/roboto-v30-latin-regular.woff2') format('woff2'); 
 }
 
 * {
@@ -15,7 +25,7 @@
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 /* === Header === */
@@ -129,7 +139,8 @@ nav > div > img {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: 50px 1fr;
-  gap: 1rem;
+  row-gap: 1.5rem;
+  column-gap: 1rem;
 }
 
 /* === Profile Nav === */
@@ -208,7 +219,7 @@ main section h2 {
   border-radius: .5rem;
   background-color: var(--secondary-clr);
   padding: 1.5rem;
-  box-shadow: 0px 1px 10px;
+  box-shadow: 0px 1px 10px var(--shadow);
 }
 
 .article-container article h3 {
@@ -217,7 +228,9 @@ main section h2 {
 }
 
 .article-container article p {
-  height: 100px;
+  height: 90px;
+  overflow: hidden;
+  color: var(--font-clr);
 }
 
 .article-container article .icon-container {
@@ -241,17 +254,14 @@ main section h2 {
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-clr);
-  border-radius: 1rem;
+  border-radius: .5rem;
   padding: 1rem;
-  box-shadow: 0px 1px 10px;
-}
-
-.card-announce article:nth-last-child(n + 2) {
-  border-bottom: 1px solid;
+  box-shadow: 0px 1px 10px var(--shadow);
 }
 
 .card-announce article:nth-child(n + 2) {
   padding: 1rem 0 ;
+  border-top: 1px solid;
 }
 
 .card-announce article:last-child {
@@ -260,6 +270,10 @@ main section h2 {
 
 .card-announce h3 {
   margin: 0;
+}
+
+.card-announce p {
+  color: var(--font-clr);
 }
 
 /* === Trending === */
@@ -278,9 +292,9 @@ main section h2 {
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-clr);
-  border-radius: 1rem;
+  border-radius: .5rem;
   padding: 1rem;
-  box-shadow: 0px 1px 10px;
+  box-shadow: 0px 1px 10px var(--shadow);
 }
 
 .card-trending img {
@@ -296,21 +310,23 @@ main section h2 {
 }
 
 .card-trending a {
-  color: inherit;
+  color: #000;
   text-decoration: none;
-}
-
-.card-trending article:nth-last-child(n + 2) {
-  border-bottom: 1px solid;
 }
 
 .card-trending article:nth-child(n + 2) {
   padding: 1rem 0 ;
+  border-top: 1px solid;
 }
 
 .card-trending article:last-child {
   padding: 1rem 0 0;
 }
+
 .card-trending h3 {
   margin: 0;
+}
+
+.card-trending p {
+  color: var(--font-clr);
 }
